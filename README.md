@@ -1,7 +1,7 @@
 <br />
 <p align="center">
-  <a href="https://github.com/GiacomoBorsellino/pokedex/blob/main/images/pokedex-logo.png">
-    <img src="/build/images/pokedex-logo.png" alt="Logo" width="200">
+  <a href="https://github.com/GiacomoBorsellino/pokedex">
+    <img src="https://github.com/GiacomoBorsellino/pokedex/blob/main/images/pokedex-logo.png" alt="Logo" width="200">
   </a>
 
   <h3 align="center">Pokédex</h3>
