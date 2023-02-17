@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/GiacomoBorsellino/pokedex">
+  <a href="https://github.com/GiacomoBorsellino/pokedex-logo.png">
     <img src="/build/images/pokedex-logo.png" alt="Logo" width="200">
   </a>
 
