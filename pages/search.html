@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../css/styleSearch.css">
+        <link rel="icon" href="../images/pokeMenu.png">     
+        <title>Pokédex</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- OPENING -->
+        <div class="opening">
+            <img class="pokeUp" src="../images/pokeup.png" alt="pokeup"/>
+            <img class="pokeDown" src="../images/pokedown.png" alt="pokedown"/>
+        </div>
+
+        <!--  MENU -->
+        <img class="menuButton" src="../images/pokeMenu.png" alt="menu" onclick="opengMenu()"/>
+
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../index.html"><h2>Return to Menu</h2></a>                        
+                    </li>
+                    <li>
+                        <a href="../pages/search.html"><h2>Searching your Pokémon</h2></a>                      
+                    </li>
+                    <li>
+                        <a href="../pages/generation.html"><h2>Searching for Generations</h2></a>                      
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- POKEDEX -->
+        <header>
+            <h1>Pokédex</h1>
+        </header>
+
+        <!-- CARD -->
+        <div class="card">
+            <h3 class="id"></h3>
+            <h2 class="name"></h2>
+            <div class="statsPlus">
+                <div>
+                    <h3 class="type2"></h3>
+                    <h3 class="type">Type: </h3>
+                </div>
+                <div class="stats">
+                    <h2 class="height"></h2>
+                    <h2 class="weight"></h2>    
+                </div>                
+            </div>
+            <h2 class="jpText"></h2>
+
+        <div class="cardImg">
+            <img class="img" src="../images/qMark.png" alt="pokemon sprite"/>
+        </div>
+
+        </div>
+        
+        <!-- STAR BEPPE -->
+        <img class="starBeppe" src="../images/star.png" alt="Star Beppe" />
+
+        <!-- CARD DESKTOP -->
+        <div class="cardDesktop">
+            <div class="baseStats">
+                <img  class="spriteFront" alt="sprite front">
+                <img  class="spriteBack" alt="sprite back">
+                <h2>Base Stats</h2>                
+                <ul>
+                    <li class="hp"></li>
+                    <li class="attack"></li>
+                    <li class="defense"></li>
+                    <li class="spAttack"></li>
+                    <li class="spDefense"></li>
+                    <li class="speed"></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- FORM SEARCH -->
+        <div class="searching">
+            <form>
+                <input class="formPokemon" type="text" placeholder="Search Pokémon">
+            </form>
+            <button class="buttonSearch" type="submit">Go!</button>            
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <h3>Nintendo 1991©</h3>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script src="../js/openingClose.js"></script>
+        <script src="../js/openingMenu.js"></script>
+        <script src="../js/searchPokemon.js"></script>
+    </body>
+</html>

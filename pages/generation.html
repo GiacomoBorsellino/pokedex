@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../css/styleGenerations.css">
+        <link rel="icon" href="../images/pokeMenu.png">     
+        <title>Pokédex</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- BUTTON UP -->
+        <img class="buttonUp" src="../images/buttonUp.png" alt="buttonUp" onclick="buttonUp()"/>
+
+        <!-- OPENING -->
+        <div class="opening">
+            <img class="pokeUp" src="../images/pokeup.png" alt="pokeup"/>
+            <img class="pokeDown" src="../images/pokedown.png" alt="pokedown"/>
+        </div>
+
+        <!--  MENU -->
+        <img class="menuButton" src="../images/pokeMenu.png" alt="menu" onclick="openingMenu()"/>
+
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../index.html"><h2>Return to Menu</h2></a>                        
+                    </li>
+                    <li>
+                        <a href="../pages/search.html"><h2>Searching your Pokémon</h2></a>                      
+                    </li>
+                    <li>
+                        <a href="../pages/generation.html"><h2>Searching for Generations</h2></a>                      
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- POKEDEX -->
+        <header>
+            <h1>Pokédex</h1>
+        </header>
+
+        <!-- MENU GENERATIONS -->
+        <div class="menuGen">
+            <div>
+                <button class="gen1" onclick="callGen1()">1</button>
+                <button class="gen2" onclick="callGen2()">2</button>
+                <button class="gen3" onclick="callGen3()">3</button>
+                <button class="gen4" onclick="callGen4()">4</button>
+                <button class="gen5" onclick="callGen5()">5</button>
+                <button class="gen6" onclick="callGen6()">6</button>
+                <button class="gen6" onclick="callGen7()">7</button>
+                <button class="gen6" onclick="callGen8()">8</button>
+            </div>
+        </div>
+
+        <!-- TAB ERROR -->
+        <div class="tabErrorSuperContainer">
+            <div class="tabErrorSubContainer">
+                <h2>Call error!</h2>
+                <p>Please, try later</p>
+            </div>
+        </div>
+
+        <div class="controlCleaner">
+                <!-- CARD POKEMON 
+                <div class="superContainer">
+                    <div class="subContainer">
+                        <div class="cardPokemonContainer">
+                            <div class="cardPokemon">
+
+                                <img class="imgPokemon" src="../images/55.svg" alt="pokemon"/>
+                                <h4 class="index">#77</h4>
+                                <h2 class="name">Name</h2>
+
+                                <div class="typeAbilities">
+                                    <h3 class="type">Type</h3>&nbsp;&nbsp;&nbsp;
+                                    <h3 class="ability">Ability</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="../js/openingClose.js"></script>
+        <script src="../js/openingMenu.js"></script>
+        <script src="../js/searchGen.js"></script>
+        <script src="../js/buttonUp.js"></script>
+    </body>
+</html>

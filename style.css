@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(177, 56, 56);
+    font-family: 'Exo 2', sans-serif;
+    color: whitesmoke;
+    animation: bodyTransition 1s linear 3s;
+}
+
+@keyframes bodyTransition {
+    0%{background-color: rgb(177, 56, 56);}
+    30%{background-color: white;}
+    100%{background-color: rgb(177, 56, 56);}
+
+}
+
+/* OPENING */
+.pokeUp  {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    width: 400%;
+    z-index: 5;
+    animation: openingUp 2s linear 1s;
+}
+
+@keyframes openingUp {
+    0% {top: 0%;}
+    100% {top: -100%;}
+}
+
+.pokeDown  {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    width: 400%;
+    z-index: 4;
+    animation: openingdown 2s linear 1s;
+}
+
+@keyframes openingdown {
+    0% {bottom: 0%;}
+    100% {bottom: -100%;}
+}
+
+/* MENU BUTTON */
+.menuButton {
+    width: 2.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    animation: rotationMenuButton 2s linear 1s;
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.menuButton:hover {
+    opacity: 1;
+}
+
+@keyframes rotationMenuButton {
+    0% {transform: rotate(200deg);right: -2rem;}
+    80% {transform: rotate(-20deg);right: 2.3rem;}
+    100% {transform: rotate(0deg);right: 2rem;}
+}
+
+/* MENU */
+nav {
+    background-image: url(../images/backPokedex.png);
+    background-size: 170%;
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: rgb(224, 18, 18);
+    cursor: pointer;
+    z-index: 2;
+    animation: navSliding 0.6s linear;
+}
+
+@keyframes navSliding {
+    0%{top: -100%;}
+    100%{top: 0%;}
+}
+
+nav div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+nav div ul {
+    list-style: none;  
+    text-align: center;
+}
+
+ul li {
+    margin-top: 2rem ;
+}
+
+ul a:link,
+ul a:visited,
+ul a:active {
+    color: rgb(224, 18, 18);
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(84, 204, 94);
+}
+
+/* POKEDEX */ 
+header h1 {
+    margin-top: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5rem;
+    font-weight: 900;
+}
+
+/* CORE TRANSITION */
+.coreTransition {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    align-self: center;
+    padding-top: 50%;
+    margin: auto;
+    animation: coreTransition 2s linear 1s;
+}
+
+@keyframes coreTransition {
+    0%{
+        padding-top: 20%; 
+        width: 5rem;
+    }
+    40%{padding-top: 50%;
+        width: 10rem; 
+        filter: blur(2px);}
+    70%{
+        padding-top: 40%;
+        width: 15rem; 
+        filter: blur(2px);}
+    90%{padding-top: 45%;}
+    100%{
+        padding-top: 50%; 
+        width: 20rem; 
+        filter: blur(7px);
+    }
+}
+
+.coreText {
+    display: flex;
+    display: none;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.coreText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.coreText h2 {
+    border-radius: 5px;
+    margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+    color:  rgb(197, 69, 69);
+}
+
+.coreText a:active,
+.coreText a:link,
+.coreText a:visited {
+    text-decoration: none;
+    color: white;
+}
+.coreText a:hover {
+    color: white;
+    color: rgb(84, 204, 94);
+}
+
+/* -- MEDIA QUERIES -- */
+
+/* MOBILE */
+@media only screen and (max-width: 361px) {
+/* OPENING */
+.pokeUp  {
+    width: 320%;
+}
+
+.pokeDown  {
+    width: 320%;
+
+}
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1365px) {
+/* OPENING */
+.pokeUp  {
+    width: 100%;
+}
+
+.pokeDown  {
+    width: 100%;
+}
+
+/* MENU */
+nav {
+    background-image: url(../images/backPokedex.png);
+    background-size: 100%;
+}
+
+/* CORE TRANSITION */
+.coreTransition {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    align-self: center;
+    padding-top: 0%;
+    margin: 0%;
+    margin: auto;
+    animation: coreTransition 2s linear 1s;
+}
+
+@keyframes coreTransition {
+    0%{
+        padding-top: 30%; 
+        width: 5rem;
+    }
+    40%{padding-top: 10%;
+        width: 10rem; 
+        filter: blur(2px);
+    }
+    70%{
+        padding-top: 10%;
+        width: 15rem; 
+        filter: blur(2px);
+    }
+    90%{
+        padding-top: 5%;
+    }
+    100%{
+        padding-top: 10%; 
+        width: 20rem; 
+        filter: blur(7px);
+    }
+}
+
+.coreText {
+    width: 30%;
+    margin-top: 15%;
+    font-size: 0.7rem;
+}
+
+.coreText h2:hover {
+    background-color: rgb(84, 204, 94);
+}
+
+}
+    

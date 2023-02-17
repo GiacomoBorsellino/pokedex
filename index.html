@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./images/pokeMenu.png">     
+        <title>Pokédex</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- OPENING -->
+        <div class="opening">
+            <img class="pokeUp" src="./images/pokeup.png" alt="pokeup"/>
+            <img class="pokeDown" src="./images/pokedown.png" alt="pokedown"/>
+        </div>
+
+        <!--  MENU -->
+        <img class="menuButton" src="./images/pokeMenu.png" alt="menu" onclick="openingMenu()"/>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../index.html"><h2>Return to Menu</h2></a>                        
+                    </li>
+                    <li>
+                        <a href="../pages/search.html"><h2>Searching your Pokémon</h2></a>                      
+                    </li>
+                    <li>
+                        <a href="../pages/generation.html"><h2>Searching for Generations</h2></a>                      
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- POKEDEX -->
+        <header>
+            <h1>Pokédex</h1>
+        </header>
+
+        <!-- CORE -->
+        <img class="coreTransition" src="./images/pokeMenu.png" alt="ball"/>
+        <div class="coreText">
+            <div>
+                <a href="./pages/search.html"><h2>Search Pokémon</h2></a>
+                <a href="./pages/generation.html"><h2>Search Generation</h2></a>
+            </div>
+        </div>            
+
+        <!-- FOOTER -->
+        <footer>
+            <h3>Nintendo 1991©</h3>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script src="./js/openingClose.js"></script>
+        <script src="./js/openingMenu.js"></script>
+        <script src="./js/coreTransition.js"></script>
+    </body>
+</html>

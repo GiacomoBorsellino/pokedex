@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(177, 56, 56);
+    font-family: 'Exo 2', sans-serif;
+    color: whitesmoke;
+}
+
+/* OPENING */
+.pokeUp  {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    width: 400%;
+    z-index: 5;
+    animation: openingUp 2s linear 1s;
+}
+
+@keyframes openingUp {
+    0% {top: 0%;}
+    100% {top: -100%;}
+}
+
+.pokeDown  {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    width: 400%;
+    z-index: 4;
+    animation: openingdown 2s linear 1s;
+}
+
+@keyframes openingdown {
+    0% {bottom: 0%;}
+    100% {bottom: -100%;}
+}
+
+.menuGen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.menuGen div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuGen button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 3rem 1rem 1rem 0rem;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.menuGen button:hover {
+    background-color: rgb(197, 69, 69);
+}
+
+/* MENU BUTTON */
+.menuButton {
+    width: 2.5rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    animation: rotationMenuButton 2s linear 1s;
+    z-index: 3;
+    opacity: 0.7;
+}
+
+.menuButton:hover {
+    opacity: 1;
+}
+
+@keyframes rotationMenuButton {
+    0% {transform: rotate(200deg);right: -2rem;}
+    80% {transform: rotate(-20deg);right: 2.3rem;}
+    100% {transform: rotate(0deg);right: 2rem;}
+}
+
+/* MENU */
+nav {
+    background-image: url(../images/backPokedex.png);
+    background-size: 170%;
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: rgb(224, 18, 18);
+    cursor: pointer;
+    z-index: 2;
+    animation: navSliding 0.6s linear;
+}
+
+@keyframes navSliding {
+    0%{top: -100%;}
+    100%{top: 0%;}
+}
+
+nav div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+nav div ul {
+    list-style: none;  
+    text-align: center;
+}
+
+ul li {
+    margin-top: 2rem ;
+}
+
+ul a:link,
+ul a:visited,
+ul a:active {
+    color: rgb(224, 18, 18);
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: rgb(84, 204, 94);
+}
+
+
+/* POKEDEX */ 
+header h1 {
+    margin-top: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 0.5rem;
+    font-weight: 900;
+}
+
+/* CARD POKEMON */
+.superContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgPokemon {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+}
+
+.cardPokemon {
+    margin: 2rem;
+    color: rgb(197, 69, 69);
+}
+
+.index {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.name {
+    color: rgb(22, 22, 22);
+    font-weight: 900;
+}
+
+.name::first-letter {
+    text-transform:capitalize;
+}
+
+.typeAbilities {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.type {
+    background-color:  rgb(197, 69, 69);
+    color: rgb(22, 22, 22);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.type::first-letter {
+    text-transform:capitalize;
+}
+
+.ability {
+    background-color: rgb(241, 240, 240);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
+
+.ability::first-letter {
+    text-transform:capitalize;
+}
+
+.controlCleaner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* BUTTON UP */
+.buttonUp {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    opacity: 0.7;
+}
+
+.buttonUp:hover {
+    opacity: 1;
+}
+
+
+/* TAB ERROR */
+.tabErrorSuperContainer {
+    display: flex;
+    display: none; /* Tab Error */
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30%;
+}
+
+.tabErrorSubContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 20%;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+@media only screen and (max-width: 361px) {
+    /* OPENING */
+    .pokeUp  {
+        width: 320%;
+    }
+    
+    .pokeDown  {
+        width: 320%;
+    
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1365px) {
+/* OPENING */
+.pokeUp  {
+    width: 100%;
+}
+
+.pokeDown  {
+    width: 100%;
+}
+    
+/* MENU */
+nav {
+    background-image: url(../images/backPokedex.png);
+    background-size: 100%;
+}
+
+}
+    
