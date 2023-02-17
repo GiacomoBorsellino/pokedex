@@ -1,16 +1,13 @@
 <br />
 <p align="center">
-  <a href="https://raw.githubusercontent.com/GiacomoBorsellino/pokedex/main/images/pokedex-logo.png">
+  <a href="https://github.com/GiacomoBorsellino/pokedex/blob/main/images/pokedex-logo.png">
     <img src="/build/images/pokedex-logo.png" alt="Logo" width="200">
   </a>
 
-  <h3 align="center">Ororo</h3>
+  <h3 align="center">Pokédex</h3>
 
   <p align="center">
     Pokédex è una single page application creata con lo scopo di dare emulare le funzionalità del famoso pokedex del brand videoludico Pokémon.
-  </p>
-    <p align="center">
-    <img src="https://raw.githubusercontent.com/GiacomoBorsellino/pokedex/main/src/images/Immagine.jpg" alt="screenshot" width="80%">
   </p>
 </p>
 
